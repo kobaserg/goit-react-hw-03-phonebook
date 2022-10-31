@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from './theme';
+import PropTypes from 'prop-types';
 
 const ListContact = styled.ul`
   padding-left: 0;
@@ -66,4 +67,8 @@ export const ContactsList = props => {
       })}
     </ListContact>
   );
+};
+
+ContactsList.propTypes = {
+  props: PropTypes.object,
 };

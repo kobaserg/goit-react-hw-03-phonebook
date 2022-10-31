@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { nanoid } from 'nanoid';
 import { theme } from './theme';
+import PropTypes from 'prop-types';
 
 const PhoneBook = styled.div`
   display: flex;
@@ -114,3 +115,6 @@ export class Contacts extends React.Component {
     );
   }
 }
+Contacts.propTypes = {
+  props: PropTypes.object,
+};
